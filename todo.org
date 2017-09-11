@@ -1,0 +1,3 @@
+* server side rendering [delayed]
+* DONE Migrate to koa 2.0
+- setup babel + nodejs 

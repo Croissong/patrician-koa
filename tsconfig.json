@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "commonjs",
+    "noEmitOnError": true,
+    "noImplicitAny": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "importHelpers": true,
+    "baseUrl": ".",
+    "outDir": "./dist",
+    "noUnusedLocals": true,
+    "allowJs": true,
+    "lib": [
+      "es2017",
+      "dom"
+    ]
+  },
+  "include": [
+    "lib",
+    "test"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

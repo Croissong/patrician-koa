@@ -1,0 +1,33 @@
+{
+  "name": "cookingquest-koa",
+  "version": "0.0.1",
+  "author": "Jan Moeller",
+  "license": "MIT",
+  "scripts": {
+    "start": "npm run mvTmpl && nodemon --watch lib --inspect=9222 --exec ts-node lib/index.ts",
+    "test": "tsc && ava dist/test/*.js",
+    "test:watch": "nodemon --watch lib --watch test --exec npm run test --ignore *.marko.js -e ts",
+    "build": "tsc",
+    "serve": "node dist/index.js",
+    "mvTmpl": "node scripts/mvTmpl.js "
+  },
+  "dependencies": {
+    "koa": "^2.0.0-alpha.7",
+    "marko": "^4.4.28",
+    "path-to-regexp": "^2.0.0",
+    "websocket": "^1.0.24"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.0.37",
+    "@types/node": "^8.0.28",
+    "@types/supertest": "^2.0.0",
+    "ava": "^0.22.0",
+    "fs-extra": "^4.0.1",
+    "get-port": "^3.2.0",
+    "nodemon": "^1.11.0",
+    "supertest": "^3.0.0",
+    "ts-node": "^3.3.0",
+    "tslib": "^1.5.0",
+    "typescript": "^2.2.0-dev.20170204"
+  }
+}
