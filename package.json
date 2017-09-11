@@ -12,15 +12,19 @@
     "mvTmpl": "node scripts/mvTmpl.js "
   },
   "dependencies": {
+    "amqplib": "^0.5.1",
     "koa": "^2.0.0-alpha.7",
     "marko": "^4.4.28",
     "path-to-regexp": "^2.0.0",
+    "uuid": "^3.1.0",
     "websocket": "^1.0.24"
   },
   "devDependencies": {
+    "@types/amqplib": "^0.5.4",
     "@types/koa": "^2.0.37",
     "@types/node": "^8.0.28",
     "@types/supertest": "^2.0.0",
+    "@types/uuid": "^3.4.2",
     "ava": "^0.22.0",
     "fs-extra": "^4.0.1",
     "get-port": "^3.2.0",
