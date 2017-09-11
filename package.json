@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "amqplib": "^0.5.1",
+    "eventemitter3": "^2.0.3",
     "koa": "^2.0.0-alpha.7",
     "marko": "^4.4.28",
     "path-to-regexp": "^2.0.0",
@@ -21,6 +22,7 @@
   },
   "devDependencies": {
     "@types/amqplib": "^0.5.4",
+    "@types/eventemitter3": "^2.0.2",
     "@types/koa": "^2.0.37",
     "@types/node": "^8.0.28",
     "@types/supertest": "^2.0.0",

@@ -1,5 +1,5 @@
 import { connect, Connection, Channel } from 'amqplib';
-import { EventEmitter } from 'events';
+import { EventEmitter } from 'eventemitter3';
 import * as uuid from 'uuid/v4';
 
 export class PhoenixBackend implements Backend {
@@ -19,7 +19,7 @@ export class PhoenixBackend implements Backend {
 
   async createChannel(conn: Connection) {
     const channel = await conn.createChannel();
-    const responseEmitter = new EventEmitter().setMaxListeners(0);
+    const responseEmitter = new EventEmitter();
     Object.assign(this, { responseEmitter });
     channel.consume(REPLY_QUEUE,
       (msg) => responseEmitter.emit(msg.properties.correlationId,
